@@ -1,0 +1,63 @@
+/shipiq-agentic-demo
+├── backend/
+│   ├── app/
+│   │   ├── __init__.py
+│   │   ├── main.py
+│   │   ├── agents/
+│   │   │   ├── __init__.py
+│   │   │   ├── ingestion.py
+│   │   │   ├── parsing.py
+│   │   │   ├── normalization.py
+│   │   │   ├── validation.py
+│   │   │   ├── kg.py
+│   │   │   ├── optimizer.py
+│   │   │   └── query.py
+│   │   ├── orchestrator.py
+│   │   ├── kg_wrapper.py
+│   │   ├── storage.py
+│   │   ├── models.py
+│   │   └── utils.py
+│   ├── requirements.txt
+│   ├── Dockerfile
+│   └── tests/
+│       ├── __init__.py
+│       ├── test_parsing.py
+│       ├── test_normalization.py
+│       └── test_validation.py
+├── frontend/
+│   ├── src/
+│   │   ├── App.tsx
+│   │   ├── main.tsx
+│   │   ├── index.css
+│   │   ├── components/
+│   │   │   ├── Timeline.tsx         # Place canvas component here
+│   │   │   ├── UploadPanel.tsx
+│   │   │   ├── LogPanel.tsx
+│   │   │   ├── QueryInput.tsx
+│   │   │   └── ResultsPanel.tsx
+│   │   └── api/
+│   │       └── api.ts
+│   ├── public/
+│   │   └── index.html
+│   ├── package.json
+│   ├── tailwind.config.js
+│   ├── postcss.config.js
+│   ├── tsconfig.json
+│   └── Dockerfile
+├── samples/
+│   ├── sample.xlsx
+│   ├── sample.csv
+│   └── sample.pdf
+├── infra/
+│   ├── neo4j-init/
+│   │   └── init.cypher
+│   └── minio/
+│       └── policy.json
+├── scripts/
+│   └── seed_kg.py
+├── tests/
+│   └── README.md
+├── .env.template
+├── docker-compose.yml
+├── README.md
+└── Makefile

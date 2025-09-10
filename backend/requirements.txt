@@ -1,0 +1,15 @@
+fastapi
+uvicorn[standard]
+python-multipart
+pandas
+pdfplumber
+pytesseract
+camelot-py[cv]
+py2neo
+neo4j
+redis
+minio
+orjson
+pulp
+openai
+faiss-cpu
